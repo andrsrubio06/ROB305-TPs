@@ -2,8 +2,6 @@
 #include <pthread.h>
 #include <time.h>
 
-
-
 struct Data {
 volatile unsigned int nLoops;
 volatile double pCounter;
