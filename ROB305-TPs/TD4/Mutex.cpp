@@ -20,8 +20,8 @@ Mutex::~Mutex() {
 
 
 void Mutex::lock() {
-        pthread_mutex_lock(&posixId);
-    }
+    pthread_mutex_lock(&posixId);
+}
 
 bool Mutex::tryLock() {
     return pthread_mutex_trylock(&posixId) == 0;
