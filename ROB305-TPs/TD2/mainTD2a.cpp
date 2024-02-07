@@ -38,8 +38,6 @@ void* incr(void* v_data){
 int main(int argc, char* argv[])
 {
    // std::cout << "Hello World" << std::endl;
-
-
     unsigned int nLoops = std::stoi(argv[1]);
     unsigned int nTasks = std::stoi(argv[2]);
     double counter = 0.0;
@@ -58,7 +56,7 @@ int main(int argc, char* argv[])
     }
     clock_gettime(CLOCK_REALTIME, &fin);
 
-    std::cout << "Counter value = " << data.pCounter << std::endl;
+    std::cout << "Counter value (n) = " << data.pCounter << std::endl;
 
     duree.tv_sec = fin.tv_sec - debut.tv_sec;
     if (fin.tv_nsec < debut.tv_nsec) {
